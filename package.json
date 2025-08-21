@@ -1,0 +1,17 @@
+{
+  "name": "demo-login-bug",
+  "version": "1.0.0",
+  "description": "Demo repo untuk QA testing dengan Google Jules",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "jest --coverage"
+  },
+  "dependencies": {
+    "express": "^4.19.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4"
+  }
+}
