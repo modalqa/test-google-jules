@@ -5,6 +5,10 @@ exports.login = (req, res) => {
     return res.status(400).json({ error: "Username is required" });
   }
 
+  if (!password) {
+    return res.status(400).json({ error: "Password is required" });
+  }
+
   // BUG: tidak cek password kosong
   if (username === "admin" && password === "1234") {
     return res.json({ message: "Login success" });
